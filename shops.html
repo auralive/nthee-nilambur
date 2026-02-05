@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shops - Nilambur</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="brand">
+                <div class="brand-icon">🛍️</div>
+                <div class="brand-text">
+                    <div class="brand-title">Shops in Nilambur</div>
+                    <div class="brand-sub">Explore markets & stores</div>
+                </div>
+            </div>
+
+            <nav class="links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="request.html">Request Help</a>
+                <a href="offer.html">Offer Help</a>
+
+                <a href="hotels.html">Hotels</a>
+                <a class="active" href="shops.html">Shops</a>
+                <a href="institutions.html">Institutions</a>
+
+                <a href="emergency.html">Emergency</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+        </header>
+
+        <section class="section alt">
+            <div class="section-head">
+                <h2>Shops & Markets</h2>
+                <p class="muted">Search supermarkets, pharmacies, electronics etc.</p>
+            </div>
+
+            <div class="dir-head">
+                <div></div>
+                <div class="searchbox">
+                    <input
+                        id="shopSearch"
+                        placeholder="Search shop name / category..."
+                        onkeyup="filterCards('shopSearch', 'shopGrid')"
+                    />
+                </div>
+            </div>
+
+            <div class="directory-grid" id="shopGrid">
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Nilambur Supermarket</div>
+                        <div class="small-tag">Grocery</div>
+                    </div>
+                    <div class="dir-meta">
+                        🛒 Daily Needs<br />
+                        📍 Town Center<br />
+                        ⏰ 8 AM - 10 PM
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Nilambur Medicals</div>
+                        <div class="small-tag">Pharmacy</div>
+                    </div>
+                    <div class="dir-meta">
+                        💊 Medicines Available<br />
+                        📍 Near Hospital Road<br />
+                        ⏰ 24 Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Tech Electronics</div>
+                        <div class="small-tag">Electronics</div>
+                    </div>
+                    <div class="dir-meta">
+                        🖥️ Laptops / Mobiles<br />
+                        📍 Market Road<br />
+                        ⏰ 10 AM - 8 PM
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="big-footer">
+            <div class="footer-overlay">
+                <div class="footer-bottom">
+                    <p>© 2026 Nilambur Social Help • Built with ❤️</p>
+                    <div class="footer-icons">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="Instagram">i</a>
+                        <a href="#" title="YouTube">y</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

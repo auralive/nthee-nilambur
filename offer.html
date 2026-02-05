@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Offer Help - Nilambur Social Help</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <header class="nav">
+            <div class="brand">
+                <div class="brand-icon">🤝</div>
+                <div class="brand-text">
+                    <div class="brand-title">Offer Help</div>
+                    <div class="brand-sub">Nilambur Social Help</div>
+                </div>
+            </div>
+
+            <nav class="links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="request.html">Request Help</a>
+                <a class="active" href="offer.html">Offer Help</a>
+                <a href="emergency.html">Emergency</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="btn ghost" href="request.html">Request Help</a>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+        </header>
+
+        <section class="section alt">
+            <div class="section-head">
+                <h2>Offer Help 🤝</h2>
+                <p class="muted">Register as volunteer / donor.</p>
+            </div>
+
+            <div class="form-wrap">
+                <div class="field">
+                    <label>Your Name</label>
+                    <input class="input" type="text" placeholder="Enter name" />
+                </div>
+
+                <div class="field">
+                    <label>Phone Number</label>
+                    <input class="input" type="text" placeholder="+91 XXXXX XXXXX" />
+                </div>
+
+                <div class="field">
+                    <label>Area</label>
+                    <input class="input" type="text" placeholder="Nilambur / nearby area" />
+                </div>
+
+                <div class="field">
+                    <label>How can you help?</label>
+                    <select>
+                        <option>Volunteer (general)</option>
+                        <option>Blood Donor</option>
+                        <option>Driver</option>
+                        <option>Medical support</option>
+                        <option>Food support</option>
+                        <option>Financial support</option>
+                    </select>
+                </div>
+
+                <div class="field" style="grid-column: 1/-1">
+                    <label>Extra Details</label>
+                    <textarea placeholder="Example: available time, blood group, vehicle, etc..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button class="btn primary">Submit Volunteer</button>
+                <a class="btn ghost" href="emergency.html">Emergency Page</a>
+            </div>
+        </section>
+
+        <footer class="big-footer">
+            <div class="footer-overlay">
+                <div class="footer-bottom">
+                    <p>© 2026 Nilambur Social Help • Built with ❤️</p>
+                    <div class="footer-icons">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="Instagram">i</a>
+                        <a href="#" title="YouTube">y</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotels - Nilambur</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="brand">
+                <div class="brand-icon">🏨</div>
+                <div class="brand-text">
+                    <div class="brand-title">Hotels in Nilambur</div>
+                    <div class="brand-sub">Find stay locations</div>
+                </div>
+            </div>
+
+            <nav class="links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="request.html">Request Help</a>
+                <a href="offer.html">Offer Help</a>
+
+                <a class="active" href="hotels.html">Hotels</a>
+                <a href="shops.html">Shops</a>
+                <a href="institutions.html">Institutions</a>
+
+                <a href="emergency.html">Emergency</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+        </header>
+
+        <section class="section alt">
+            <div class="section-head">
+                <h2>Hotels & Stay</h2>
+                <p class="muted">Search hotels in Nilambur and nearby places.</p>
+            </div>
+
+            <div class="dir-head">
+                <div></div>
+                <div class="searchbox">
+                    <input
+                        id="hotelSearch"
+                        placeholder="Search hotel name / place..."
+                        onkeyup="filterCards('hotelSearch', 'hotelGrid')"
+                    />
+                </div>
+            </div>
+
+            <div class="directory-grid" id="hotelGrid">
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Nilambur Grand Hotel</div>
+                        <div class="small-tag">Town</div>
+                    </div>
+                    <div class="dir-meta">
+                        ⭐ 4 Star<br />
+                        📍 Nilambur Town<br />
+                        📞 +91 XXXXX XXXXX
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">View</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Forest View Resort</div>
+                        <div class="small-tag">Resort</div>
+                    </div>
+                    <div class="dir-meta">
+                        🌿 Nature Stay<br />
+                        📍 Near Forest Area<br />
+                        📞 +91 XXXXX XXXXX
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">View</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">Budget Lodge Nilambur</div>
+                        <div class="small-tag">Budget</div>
+                    </div>
+                    <div class="dir-meta">
+                        💰 Low cost rooms<br />
+                        📍 Market Road<br />
+                        📞 +91 XXXXX XXXXX
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">View</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="big-footer">
+            <div class="footer-overlay">
+                <div class="footer-bottom">
+                    <p>© 2026 Nilambur Social Help • Built with ❤️</p>
+                    <div class="footer-icons">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="Instagram">i</a>
+                        <a href="#" title="YouTube">y</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

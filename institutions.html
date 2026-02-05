@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Institutions - Nilambur</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="brand">
+                <div class="brand-icon">🏛️</div>
+                <div class="brand-text">
+                    <div class="brand-title">Institutions in Nilambur</div>
+                    <div class="brand-sub">Hospitals • Schools • Police • Banks</div>
+                </div>
+            </div>
+
+            <nav class="links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="request.html">Request Help</a>
+                <a href="offer.html">Offer Help</a>
+
+                <a href="hotels.html">Hotels</a>
+                <a href="shops.html">Shops</a>
+                <a class="active" href="institutions.html">Institutions</a>
+
+                <a href="emergency.html">Emergency</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+        </header>
+
+        <section class="section alt">
+            <div class="section-head">
+                <h2>Institutions Directory</h2>
+                <p class="muted">Important places in Nilambur for citizens and visitors.</p>
+            </div>
+
+            <div class="dir-head">
+                <div></div>
+                <div class="searchbox">
+                    <input
+                        id="instSearch"
+                        placeholder="Search hospital / school / police / bank..."
+                        onkeyup="filterCards('instSearch', 'instGrid')"
+                    />
+                </div>
+            </div>
+
+            <div class="directory-grid" id="instGrid">
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">🏥 Nilambur Govt Hospital</div>
+                        <div class="small-tag">Hospital</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur Town<br />
+                        ☎️ Contact: +91 XXXXX XXXXX<br />
+                        ⏰ Open: 24 Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">👮 Nilambur Police Station</div>
+                        <div class="small-tag">Police</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur Town<br />
+                        ☎️ Contact: +91 XXXXX XXXXX<br />
+                        🚨 Emergency: 100
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="tel:100">Call 100</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">🔥 Fire & Rescue Station</div>
+                        <div class="small-tag">Fire</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur Area<br />
+                        🚨 Emergency: 101<br />
+                        ⏰ Available: 24 Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="tel:101">Call 101</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">🏫 Nilambur Higher Secondary School</div>
+                        <div class="small-tag">School</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur Town<br />
+                        🧑‍🎓 Education Institution<br />
+                        ⏰ Working: School Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">🏦 State Bank of India (SBI)</div>
+                        <div class="small-tag">Bank</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur Branch<br />
+                        💳 ATM available<br />
+                        ⏰ Working: Bank Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+
+                <div class="dir-card">
+                    <div class="dir-top">
+                        <div class="dir-title">🏢 Nilambur Taluk Office</div>
+                        <div class="small-tag">Govt</div>
+                    </div>
+                    <div class="dir-meta">
+                        📍 Nilambur<br />
+                        🧾 Government Services<br />
+                        ⏰ Working: Office Hours
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn ghost" href="#">Directions</a>
+                        <a class="btn primary" href="#">Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="big-footer">
+            <div class="footer-overlay">
+                <div class="footer-bottom">
+                    <p>© 2026 Nilambur Social Help • Built with ❤️</p>
+                    <div class="footer-icons">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="Instagram">i</a>
+                        <a href="#" title="YouTube">y</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
